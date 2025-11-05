@@ -1,7 +1,13 @@
 import streamlit as st
 from db_pg import init_db, login_user, register_user, save_progress, get_user_progress
 from report import generate_report_pdf
-from modules import segmentation, asset_lab, risk_workshop, threat_mapping, incident_response, hygiene_dashboard
+import modules.segmentation as segmentation
+import modules.asset_lab as asset_lab
+import modules.risk_workshop as risk_workshop
+import modules.threat_mapping as threat_mapping
+import modules.incident_response as incident_response
+import modules.hygiene_dashboard as hygiene_dashboard
+
 import tempfile, os
 
 st.set_page_config(page_title="OT/ICS Training Platform (PGSQL)", layout="wide")
