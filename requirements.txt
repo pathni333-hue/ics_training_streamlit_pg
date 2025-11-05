@@ -1,0 +1,10 @@
+streamlit>=1.20
+pandas
+plotly
+matplotlib
+numpy
+reportlab
+bcrypt
+psycopg2-binary
+networkx
+python-dateutil
